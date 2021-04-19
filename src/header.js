@@ -1,14 +1,12 @@
-import { AppBar, Toolbar } from "@material-ui/core";
 import React from "react";
+import "./header.css";
 
-export default function Header() {
-  const displayDesktop = () => {
-    return <Toolbar>Hello from desktop</Toolbar>;
-  };
-
+function Header() {
   return (
-    <header>
-      <AppBar>{displayDesktop()}</AppBar>
-    </header>
+    <div className="header">
+      <p className="header__icon">Engage</p>
+    </div>
   );
 }
+
+export default Header;
